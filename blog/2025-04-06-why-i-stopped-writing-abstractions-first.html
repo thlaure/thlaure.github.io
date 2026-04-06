@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why I stopped writing abstractions first — Thomas Laure</title>
+  <meta name="description" content="A short description of the note for search engines." />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+
+    <a class="back" href="index.html">← notes</a>
+
+    <header class="note-header">
+      <p class="note-date">2025-04-06</p>
+      <h1 class="note-title">Why I stopped writing abstractions first</h1>
+    </header>
+
+    <article class="prose">
+
+      <p>
+        For years I reached for an abstraction before I had more than one use case.
+        A helper, a trait, a base class, something to hold the shape of what I thought
+        was coming. It felt responsible. It felt like architecture.
+        It was mostly anticipatory complexity.
+      </p>
+
+      <p>
+        The problem with abstractions written before the second use case exists is that
+        they model the future you imagined, not the future that arrives.
+        When the real second use case comes, and it's never quite the one you expected,
+        you end up bending both the abstraction and the new code to fit each other.
+        More work, less clarity than if you'd just written it twice.
+      </p>
+
+      <p>
+        So I write the duplication. Two classes that do similar things,
+        three functions that share a pattern. I let the code stay concrete
+        until the right abstraction becomes obvious on its own.
+      </p>
+
+      <p>
+        An abstraction earns its place when removing it would make the code
+        harder to understand. Feeling tidier doesn't count.
+      </p>
+
+    </article>
+
+  </main>
+</body>
+</html>
